@@ -1,0 +1,159 @@
+@import url('https://fonts.gooleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.container::before{
+    content: '';
+    width: 300px;
+    height: 200px;
+   
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: polygon(100% 0, 100% 100%, 89% 13%, 00);
+}
+
+.section-1{
+    width: 40%;
+    height:100vh;
+    background: #5cc5c8;
+    border-radius: 0 70px 70px 0;
+    padding: 1rem;
+    position: relative;
+}
+.section-1::before{
+    content: '';
+    width: 200px;
+    height: 200px;
+    background: url("../images/tavsan.png");
+    background-size: cover;
+    background-position:center ;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    animation: piggy 10s linear infinite;
+
+}
+@keyframes piggy {
+    20%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateY(100px);
+    }
+    80%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateZ(200px);
+    }
+}
+.section-1 .fas{
+    font-size: 1.5rem;
+    color:#FD839C;
+    margin-right: 10px;
+
+}
+.section-1 span{
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: #fff;
+}
+/*içerik açıklaması*/
+.content-desc{
+    margin-top: 4rem;
+}
+.content-desc h1{
+    width:400px;
+    font-size: 3rem;
+    color:#fff;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+#hero-img{
+    width:300px;
+    height:auto;
+    position: absolute;
+    top:50%;
+    left:150px;
+}
+.images{
+    position:absolute;
+    bottom:20px;
+}
+.section-2{
+    margin: auto;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    position: relative;
+}
+
+@keyframes pen{
+    0%{
+        transform: translatY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    80%{
+        transform: translateY(-10);
+    }
+    100%{
+        transform: translateX(300px);
+    }
+}
+.form-wrapper h1{
+    font-size: 2rem;
+    color: #3a3939;
+    margin-bottom: 40px;
+}
+.links button{
+    width: 200px;
+    padding: 14px;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid #cac9c9;
+    outline: none;
+    border-radius: 10px;
+    margin: 0 0 40px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #3a3939;
+}
+
+#btn1{
+    margin-right: 25px;
+}
+form{
+    line-height: 4rem;
+}
+input[type="text"],input[type="email"]{
+    width: 100%;
+    padding: 7px;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid #7e7e7e;
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 14px;
+    outline: none;
+    background: #5cc5c8;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 25px;
+}
+
